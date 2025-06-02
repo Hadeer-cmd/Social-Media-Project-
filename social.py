@@ -16,13 +16,13 @@ def load_data():
 df = load_data()
 
 # ---------------- MAIN TABS ----------------
-tab1, tab2, tab3, tab4 = st.tabs(["📂 Data & Filters", "📈 Univariate", "📊 Bivariate", "🔀 Multivariate"])
+tab1, tab2, tab3, tab4 = st.tabs(["📂 Data Overview", "📈 Univariate Analysis", "📊 Bivariate Analysis", "🔀 Multivariate Analysis"])
 
 # ---------------- TAB 1: DATA OVERVIEW ----------------
 with tab1:
-    st.title("📂 Data Overview & Filters")
+    st.title("📂 Social Media Engagement Data Overview")
 
-    st.write("Simulated social media engagement dataset with detailed user, platform, and sentiment insights.")
+    st.write("This simulated social media dataset offers detailed insights into user behavior, platform activity, and content performance. It includes post and user metadata, text and keyword details, sentiment and emotion labels, and key engagement metrics like likes, shares, and impressions. Derived fields such as engagement rate and buzz change rate enable trend analysis and audience insights.")
 
     with st.expander("🧾 Key Fields"):
         st.markdown("""
